@@ -1,95 +1,170 @@
-*{text-decoration: none;}
+*{color: #ffffff;}
+.bgColor{background-color: #434343;}
+html{scroll-behavior: smooth;}
 a{text-decoration: none !important;}
-header{background-color: #f9f9f9; color: #000000;}
-.menuPrincipal{list-style-type: none;}
-.menuPrincipal li{display: inline-block; padding: 25px 40px; font-size: 14px; text-decoration:none;}
-.fd-caca{background-color: rgb(61, 30, 11); color: white;}
-.fd-blanco{background-color: rgb(255, 255, 255, 0.7); border-radius: 5px;}
-.fd-vino{background-color: #961a1a; color: white;}
+.fixed{position: fixed;}
 
-.imghero{
-    background-image: url(../IMG/hero.jpg);
-    height: 700px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero-icon{
+    max-width: 200px;
+    margin: 2em;
+}
+
+.header{
+    background-color: #2E2E2E;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
-.formulario{margin: 0px, 40px;}
-.form-cont{margin-bottom: 60px;}
-.form-title{margin-top: 50px;}
-.botonHeader{font-weight: bold; color: black; font-size: 15px;}
-.izq{text-align:left;}
-.der{text-align:right;}
-.linea{padding: 10px 0px;}
-.bloque{margin-top: 30px; padding: 40px 0px;}
-.logo img{height: 50px; margin: 12px 0px 0px;}
-.encabezado{font-size: 55px; margin: 40px 0px 0px;}
-.subencabezado{font-weight: normal;}
-.links a{font-size: 18px; margin: 10px 20px 0px;text-decoration:none;}
-.row{position: relative;}
-.copy{position: absolute;}
-.callToAction{text-decoration: none; padding: 10px 35px; border-radius: 4px;}
-.action{position: absolute; top: 60%; margin-left: 36px;}
-.action-hero{position: absolute; margin-top: 450px; margin-left: 36px;}
-.action h2{color: white; text-transform: uppercase; font-size: 72px; line-height: 60px; margin-bottom: 15px;}
-.action-hero h2{color: white; text-transform: uppercase; font-size: 72px; line-height: 60px; margin-bottom: 15px;}
-.promocion{background-color: rgba(126, 29, 29, 0.5); color: wheat; font-size: 50px; border-radius: 5px;}
-.callToActionOferta{text-decoration: none; padding: 8px 25px; border-radius: 4px; font-size: 20; background-color: white; color: rgb(61, 30, 11);}
-.promoImage{height: 400px; width: 100%;}
-.destino{margin-left: 20px;}
-.img-eventos{width: 100%; height: 100%;}
-.formulario h3{font-size: 18px; margin-top: 20px;}
-.sumbit{margin: 40px;}
-#posters h1{color: rgb(126, 29, 29); background-color: rgba(225, 225, 225, 30);}
-footer{display: flex; justify-content: center; background-color: #961a1a; color: white;padding: 20px;}
-.foot{width: 100%; display: flex; justify-content: flex-start;}
-.title__section{font-weight: bold; font-size: 20px; margin-bottom: 20px;}
-
-.serch__section {
-    width: 100%;
-    height: 800px;
-    background-color: #961a1a;
-    background-image: url(https://images.unsplash.com/photo-1509803874385-db7c23652552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    background-size: cover;
-    position: relative;
-}
-    
-.serching {
-    border-radius: 5px;
-    background-color: white;
-    width: 80%;
-    height: 9dp;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-}
-
-.serch__component .row {
-        padding-top: 5px;
-        padding-bottom: 20px;
-}
-
-.serch__button {
-    border: solid #bfbfbf;
-    border-radius: 3px;
-    border-width: thin;
-    padding: 10px;
-}
-
-.serch__button:hover {
-    box-shadow: 1px 1px #bfbfbf;
-}
-
-.serch {
-    text-align: center;
-    color: white;
-    background-color:  #961a1a;
-    padding: 17px;
+.botonCV{
+    background-color: rgb(17, 167, 204);
     border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 3%;
+
+}
+.bg-color-black{
+    background-color: #131313;
 }
 
-.comentarios{height:80px;}
+.align-vertical-center{
+    align-items: center;
+}
+.align-horizontal-center{
+    justify-content: center;
+}
+/*------------------MENU PRINCIPAL------------------*/
+.menuPrincipal{
+    padding-top: 5px;
+    list-style-type: none;
+    z-index: 10;
+}
+.menuPrincipal-li{
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    text-decoration:none;
+}
+.menuPrincipal a{color: #ffffff;}
+
+.retratoIMG{
+    min-width: 100px;
+    max-width: 400px;
+    border-radius: 3%;
+}
+
+.subseccion{
+    padding: 200px 10%;
+    min-height: 100vh;
+}
+
+.skillsRow{
+    justify-content: center;
+}
+.skillPrincipalIMG{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
+}
+.skillSecundariaIMG{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.formulario{
+    width: 40%;
+    margin: 0px 30%;
+    background-color: #131313;
+    padding: 25px;
+    border-radius: 2%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+
+}
+/*--------------------- Secciones ----------------------*/
+.subseccion{
+    padding: 100px 10%;
+    min-height: 100vh;
+}
+
+.section-title{
+    padding: 1em 2%;
+    font-size: 60px;
+}
+
+
+/*------------------ PORTFOLIO --------------------*/
+.portfolio-div{
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 80px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    overflow: visible;
+    background-color: black;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
